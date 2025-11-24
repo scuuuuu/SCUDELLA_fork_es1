@@ -16,13 +16,14 @@ int main(void) {
             printf("Processo figlio numero %d\n",i);
             printf("PID figlio: %d\n",getpid());
             printf("PID di mio padre: %d\n",getppid());
-            exit(0);
+            //exit(0);
         }
         else {
             wait(NULL);
-            printf("Processo padre numero: %d\n",i);
-            printf("PID padre: %d\n",getpid());
-            printf("PID di mio figlio: %d\n",ritorno);
+            //printf("Processo padre numero: %d\n",i);
+            //printf("PID padre: %d\n",getpid());
+            //printf("PID di mio figlio: %d\n",ritorno);
+            exit(0);
         }
     }
     return 0;
